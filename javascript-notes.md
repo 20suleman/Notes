@@ -93,7 +93,41 @@ let withor = x || y;
 console.log(value) //0
 console.log(withor) //12
 ```
+## ** Optional Chaining (?.)
+Safely accessing deeply nested properties in JavaScript can be tricky because trying to access a property on undefined or null results in a runtime error To handle this situation, we can use optional chaining (?.), which allows us to access properties without throwing an error if any part of the chain is undefined or null.
+## ** Problem: Accessing Nested Properties**
+Let’s say you have an object obj, and you want to access the property a.b.c. The issue is that if any part of the chain (a, b, or c) is undefined or null, accessing further down the chain will result in an error.
 
+const obj = { a: { b: { c: 42 } } };
+console.log(obj.a.b.c); // 42 output
+
+This works fine because all parts of the chain (a, b, and c) exist
+But what happens if a, b, or c is missing?
+
+const obj2 = { a: { b: null } };
+console.log(obj2.a.b.c); // Error: Cannot read properties of null (reading 'c')
+
+Since b is null, trying to access b.c will throw an error
+## ** Solution: Optional Chaining (?.) **
+Optional chaining (?.) allows you to safely access deeply nested properties without worrying about errors if part of the chain is undefined or null. If any property in the chain is undefined or null, it will return undefined and stop the evaluation, preventing an error.
+
+const obj2 = { a: { b: null } };
+console.log(obj2?.a?.b?.c); // undefined (no error)
+
+The key concept behind optional chaining is that it short-circuits the expression. As soon as it encounters a null or undefined, it stops the evaluation and returns undefined rather than continuing to access deeper properties.
+## ** Other Use Cases
+## ** Accessing array elements:
+const arr = [1, 2, 3];
+console.log(arr?.[1]); // 2
+console.log(arr?.[5]); // undefined
+## ** Calling methods
+
+const obj = { greet: () => 'Hello' };
+console.log(obj.greet?.()); // 'Hello'
+
+const obj2 = { };
+console.log(obj2.greet?.()); // undefined (no error)
+  
 ## **Arrays in JavaScript**
 Now that we know a bit about variables, let's move on to arrays and array-methods.
 
@@ -382,6 +416,26 @@ console.log(c) // Error as c is not accessible outside the block
   person.greet(); // `this` refers to the `person` object
 
   ```
+## ** method used to merge two objects obj1 and obj2 into new object
+Using the Spread Operator (...):
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { b: 3, c: 4 };
+
+const mergedObj = { ...obj1, ...obj2 };
+console.log(mergedObj); // { a: 1, b: 3, c: 4 }
+
+If there are properties with the same key (like b in this example), the value from the later object (obj2) will overwrite the earlier one (obj1), resulting in b: 3.
+
+Using Object.assign():
+Object.assign() is an older method that merges objects. It takes two or more objects as arguments and merges them into the first object. To avoid mutating the original objects, you can pass an empty object as the first argument, which acts as the target.
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { b: 3, c: 4 };
+
+const mergedObj = Object.assign({}, obj1, obj2);
+console.log(mergedObj); // { a: 1, b: 3, c: 4 }
+
 
 * **Arrow Functions :-** 1. In arrow functions, *this* behaves differently than in regular functions. It does not change depending on the calling context.
                          2. Instead, it keeps the value of *this* from the outer (lexical) context where the arrow function is defined.
