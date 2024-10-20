@@ -74,6 +74,8 @@ console.log(a == b) // true
 console.log(a === b) // false
 
 ```
+
+## ** Falsy values in javascript are :: false,0,-0,"",null,undefined,NaN
 ## Nullish operator
 In JavaScript, the nullish coalescing operator (??) is a logical operator that returns the right-hand side operand when the left-hand side operand is either null or undefined. If the left-hand side operand is any other value, including false, 0, "", or other falsy values, it returns the left-hand side operand. This makes it distinct from the logical OR (||) operator, which returns the right-hand side operand if the left-hand side operand is falsy.
 ```js
@@ -131,7 +133,7 @@ console.log(obj2.greet?.()); // undefined (no error)
 ## **Arrays in JavaScript**
 Now that we know a bit about variables, let's move on to arrays and array-methods.
 
-Array is a datastructure which allows to store a coolection of items, such as numbers, strings, objects, or even other arrays. Arrays are useful for organizing and managing groups of related data.
+Array is a datastructure which allows to store a collection of items, such as numbers, strings, objects, or even other arrays. Arrays are useful for organizing and managing groups of related data.
 
 ```javascript
 
@@ -158,10 +160,17 @@ The most frequently used array methods in JS are: map, filter, find, reduce, and
 Let's cover map, filter, and forEach. You can explore more in this helpful article.
 
 **The map array method**
+https://www.freecodecamp.org/news/javascript-map-how-to-use-the-js-map-function-array-method/
 
 map creates a new copy of the original array. We use it when we want to do something with the elements of the original array but don't want to change it.
 
 map iterates over the original array and takes a callback function as an argument. In the callback function, we tell it what to do with the elements.
+
+let a = [1,2,3];
+let b = a.map(x => x*2);
+console.log(a); // [1,2,3];
+console.log(b); // [2,4,6]
+
 
 ``` javascript
 
@@ -1210,3 +1219,6 @@ let data = localStorage.getItem('key')
 localStorage.removeItem('key')
 // Same for sessionStorage
 ```
+## ** Enum
+In TypeScript, an enum (short for "enumeration") is a feature that allows you to define a set of named constants
+This is useful when you want to represent a collection of related values, like states, options, or flags, with meaningful names rather than using raw numbers or strings directly in your code 
