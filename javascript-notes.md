@@ -8,7 +8,11 @@ https://medium.com/javascript-in-plain-english/the-science-behind-the-javascript
 # JavaScript Basics 👶
 
 Let's start off with some basic concepts every JS developer needs to know.
-
+## ** Client side Responsibilties
+1) Construction HTML Page
+2) Validating HTML page
+3) Converting the frontend object into JSON?XML
+4) Rendering server response to HTML
 ## Variables in JavaScript 📥
 Variables are the building blocks of every programming language. You use them to store values. A variable can be a number, string, and many other types.
 
