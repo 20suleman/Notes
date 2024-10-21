@@ -289,6 +289,9 @@ console.log(sum); // Output: 15 (1 + 2 + 3 + 4 + 5)
 ```
 
 ## destructuring and destructuring Arrays ?
+
+https://www.freecodecamp.org/news/destructuring-in-javascript/
+
 Destructuring is a feature in JavaScript that allows you to extract values from arrays, objects, and other structures into distinct variables.
 
 Destructuring Arrays is the process of breaking down an array into individual elements, and assigning those elements to separate variables. This can be done using array destructuring syntax, which uses square brackets on the left-hand side of the assignment operator to specify the variables to which the array elements should be assigned.
@@ -489,7 +492,7 @@ console.log(mergedObj); // { a: 1, b: 3, c: 4 }
 
   ``` 
 
-## Difference between Normal function and Arraow function
+## Difference between Normal function and Arrow function
 
 ![image](https://github.com/AwaizMd/Notes/assets/72355688/922eea49-b61a-4019-a342-f25e61063a43)
 
