@@ -595,7 +595,7 @@ mySet.add(6);
 
 ## Closures in JavaScript (❗important) 🔒
 We have already used a closure without even realizing it. In the example below, prefix is a closed-over-variable.
-
+A closure is a function that is bind to its lexical environment
 *In Simple words:- A closure is a function that captures the variables from its surrounding lexical scope (the context in which it was defined). This means that a closure can access variables defined in its outer scope, even after the outer function has completed execution.*
 *When a function is defined inside another function, the inner function forms a closure and "closes over" the outer function's variables. This allows the inner function to use and manipulate those variables, even if the outer function has finished executing.*
 
