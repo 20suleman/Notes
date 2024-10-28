@@ -370,7 +370,13 @@ const greet = () =>  {
 console.log(greet()('Jack'))
 ```
 Now, let's cover some important concepts related to functions.
+ ## Difference between Function and Function Expression
+ ![image](https://github.com/user-attachments/assets/a6b6aab4-2ffb-41da-bdfc-0125b2c4e10a)
 
+ ## Disadvantages of callback functions
+1)Callback hell 2)Inversion Control 3)Error Handling complexity 4)Tight Coupling and Less Flexibility
+5)Difficult to Use with Modern Asynchronous Patterns
+While callbacks can be useful, their disadvantages often make them less practical in complex asynchronous flows. Promises and async/await provide cleaner, more readable alternatives to manage asynchronous behavior in JavaScript applications.
 ## Function Scope in JavaScript 🕵️
 
 Scope determines from where the variables are accessible.
