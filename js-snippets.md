@@ -391,6 +391,8 @@ new Foo() instanceof null;
 // > TypeError: function is not a function
 // >     at … … …
 ```
+## difference between function and function Declaration
+![image](https://github.com/user-attachments/assets/79d29577-5c97-40e4-a32d-8e615fb7126c)
 
 ### 💡 Explanation:
 
