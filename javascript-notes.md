@@ -189,6 +189,7 @@ console.log(d) // [2,4,6,8,10]
 ```
 
 **The filter array method**
+https://www.freecodecamp.org/news/javascript-array-filter-tutorial-how-to-iterate-through-elements-in-an-array/
 
 filter creates a new array with elements that meet the given condition(s).
 
