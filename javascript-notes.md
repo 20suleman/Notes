@@ -1236,3 +1236,18 @@ localStorage.removeItem('key')
 ## ** Enum
 In TypeScript, an enum (short for "enumeration") is a feature that allows you to define a set of named constants
 This is useful when you want to represent a collection of related values, like states, options, or flags, with meaningful names rather than using raw numbers or strings directly in your code 
+## Namaste JavaScript
+ Lexical Environment = local memory + lexical env of its parent. Hence, Lexical Environement is the local memory along with the lexical environment of its parent
+ function a(){ // a is in lexical environment of global
+ var b=10;
+ c();
+ function c(){  //c is in lexical environment of a
+ consol.log(b)
+ }
+ }
+ a();
+*Whenever an Execution Context is created, a Lexical environment(LE) is also created and is referenced in the local Execution Context(in memory space)
+*The process of going one by one to parent and checking for values is called scope chain or Lexcial environment chain
+# TLDR; An inner function can access variables which are in outer functions even if inner function is nested deep. In any other case, a function can't access variables not in its scope.
+## Closures
+It is a function which is bind to its lexical environment 
