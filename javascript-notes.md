@@ -4,8 +4,16 @@ https://javascript.plainenglish.io/from-good-to-great-why-true-engineers-underst
 **The Science Behind The JavaScript Engine: How Machines Read Your Code :-**
 https://medium.com/javascript-in-plain-english/the-science-behind-the-javascript-engine-how-machines-read-your-code-3b067973587c
 
-
 # JavaScript Basics 👶
+# Javascript is a programming language which was created for making web pages dynamic and more interactive to the user
+1)It was created to make web pages more interactive and dynamic.
+2)Initially javascript was created to run and execute inside browsers , thats why it is called as Client Side Programming page
+# A programming language can be classified into two types i.e., Client side language and Server Side Language
+# Client side language : 
+It requires browsers to run the program executed on browser
+
+# Server Side Language:
+It is use to process recieved data on server and sends the results back to client i.e., browser executed on server
 
 Let's start off with some basic concepts every JS developer needs to know.
 ## ** Client side Responsibilties
@@ -23,7 +31,7 @@ Now, in JavaScript we have 3 ways to declare variables: var, let, and const.
 Here are the key differences:
 
 ![image](https://github.com/AwaizMd/Notes/assets/72355688/9b6e8fb7-dece-4d49-b3d5-f9ff4c74205e)
-
+ 
 
 **Let's try to understand them through examples.**
 
